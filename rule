@@ -1,0 +1,42 @@
+Tao muốn m code một game Caro (Gomoku) bằng Flutter (Dart) theo kiểu sạch, dễ mở rộng.
+Yêu cầu chức năng
+Game chơi trên 1 màn hình chính CaroGameScreen.
+Bàn cờ dạng grid vuông (mặc định 15x15).
+Người chơi gồm X và O, đánh luân phiên.
+Khi click vào ô trống thì đặt quân cờ.
+Không cho đánh vào ô đã có quân.
+Luật thắng (chọn được)
+Cho phép chọn chế độ thắng:
+thắng 3 quân liên tiếp
+thắng 4 quân liên tiếp
+thắng 5 quân liên tiếp
+Có dropdown hoặc segmented control để chọn trước khi bắt đầu game.
+Khi thay đổi chế độ thắng thì reset game.
+Kiểm tra thắng
+Kiểm tra thắng theo 4 hướng:
+ngang
+dọc
+chéo xuống
+chéo lên
+Khi có người thắng:
+highlight các ô tạo thành chuỗi thắng (đổi màu nền ô đó)
+hiện dialog thông báo "X thắng" hoặc "O thắng"
+có nút "Chơi lại"
+Tính điểm
+Có hệ thống điểm:
+X thắng: X +1 điểm
+O thắng: O +1 điểm
+Điểm được hiển thị trên UI (Scoreboard).
+Khi reset game chỉ reset bàn cờ, không reset điểm
+Có nút "Reset điểm" để đưa điểm về 0.
+UI
+Trên cùng: hiển thị điểm của X và O.
+Dưới scoreboard: hiển thị lượt hiện tại (Turn: X/O).
+Dưới nữa: hiển thị bàn cờ.
+Có nút:
+"Chơi lại"
+"Reset điểm"
+UI đẹp gọn, dùng Material 3.
+Bonus
+Nếu bàn cờ đầy mà không ai thắng thì xử lý hòa (Draw).
+Có animation nhẹ khi đặt quân (scale/fade).

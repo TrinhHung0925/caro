@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter pub:*)",
+      "Bash(flutter analyze:*)",
+      "Bash(which ffmpeg:*)",
+      "Bash(ffmpeg -y -i /Users/hungtv/Documents/hungtv/caro/assets/audio/bg_music.wav \\\\\n  -af \"afade=t=in:d=1,afade=t=out:st=23:d=1.5\" \\\\\n  -c:a libmp3lame -b:a 128k -ar 44100 \\\\\n  /Users/hungtv/Documents/hungtv/caro/assets/audio/bg_music.mp3 2>&1 | tail -3\nrm /Users/hungtv/Documents/hungtv/caro/assets/audio/bg_music.wav)"
+    ]
+  }
+}
